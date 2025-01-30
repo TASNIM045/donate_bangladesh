@@ -27,6 +27,8 @@
             <div class="navbar-start lg:ml-52">
                 <button id="blog-button"
                     class="bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl">Blog</button>
+                <button id="home-button"
+                    class="hidden bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl">Home</button>
             </div>
             <div class="navbar-center hidden lg:flex space-x-3">
                 <img class="h-12 w-12" src="assets/logo.png" alt="">
@@ -40,7 +42,7 @@
         </nav>
     </header>
     <!-- main section -->
-    <main class="mt-4 lg:mt-20 max-w-[95%] lg:max-w-[60%] mx-auto">
+    <main id="main-section" class="mt-4 lg:mt-20 max-w-[95%] lg:max-w-[60%] mx-auto">
         <div class="">
             <div class="flex justify-center gap-6">
                 <button id="donation-button"
@@ -132,7 +134,8 @@
                     <div class="p-2 lg:p-4 space-y-2 lg:space-y-4">
                         <div class="flex w-40 h-12 bg-[#F9F7F3] justify-center gap-2 items-center rounded-lg">
                             <img src="assets/coin.png" alt="">
-                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]"><span id="quota-total-donation">7560</span> BDT</p>
+                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]"><span
+                                    id="quota-total-donation">7560</span> BDT</p>
                         </div>
                         <h4 class="text-xl font-bold">
                             Aid for Injured in the Quota Movement
@@ -157,16 +160,121 @@
                 </div>
             </div>
             <!-- history area -->
-            <div id="history-area" class="hidden mt-4 lg:mt-8">
-                <div class="border border-gray-200 rounded-lg">
-                    <div class="p-4">
-                        <h1>96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-                        <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-                    </div>
-                </div>
+            <div id="history-area" class="hidden mt-4 lg:mt-8 space-y-4">
+                <!-- histoty is added dynamicaly -->
             </div>
         </div>
     </main>
+    <main id="main-extra" class="hidden mt-4 lg:mt-20 max-w-[95%] lg:max-w-[60%] mx-auto space-y-2 lg:space-y-4">
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">1. Why do floods happen?</div>
+            <div class="collapse-content">
+                <p>Floods occur due to excessive water accumulation in an area, surpassing the capacity of drainage
+                    systems. The main causes include heavy rainfall, river overflow, dam failure, and rapid snowmelt.
+                    Climate change also plays a crucial role, leading to unpredictable weather patterns and extreme
+                    rainfall. Deforestation increases flood risks as trees absorb water and slow down its flow.
+                    Urbanization contributes by replacing natural ground with concrete, preventing water absorption.
+                    Poor drainage systems in cities make the problem worse. In coastal areas, storms and tsunamis can
+                    cause floods. Human activities, such as improper waste disposal, can clog drainage systems, leading
+                    to water stagnation. Some regions are naturally prone to flooding due to their geography, like river
+                    basins or low-lying coastal areas. Effective flood management, such as building dams, maintaining
+                    drainage systems, and planting trees, can help reduce risks. Understanding these causes is essential
+                    for developing strategies to prevent future floods.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">2. What are the different types of floods?</div>
+            <div class="collapse-content">
+                <p>Floods are categorized based on their causes and impact. The most common type is river flooding,
+                    occurring when rivers overflow due to heavy rainfall or melting snow. Flash floods happen suddenly
+                    due to intense rain in a short period, often in urban or mountainous areas. Coastal flooding occurs
+                    when storm surges, hurricanes, or tsunamis push seawater onto land. Pluvial floods, or surface water
+                    floods, occur in cities when drainage systems fail, causing water to accumulate on streets.
+                    Groundwater floods happen when underground water levels rise due to prolonged rain, causing flooding
+                    in low-lying areas. Glacial lake outburst floods (GLOFs) occur when a glacier-dammed lake overflows,
+                    releasing large amounts of water. Each type of flood has different consequences and requires unique
+                    prevention strategies. Governments and communities must understand these types to prepare and
+                    implement effective flood control measures, such as better urban planning and emergency response
+                    systems.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">3. What are the effects of floods on human life?</div>
+            <div class="collapse-content">
+                <p>Floods have severe consequences on human life, affecting people physically, emotionally, and
+                    economically. The most immediate impact is the loss of lives and injuries caused by drowning or
+                    collapsing buildings. Floods damage homes, roads, and bridges, leading to homelessness and
+                    displacement. Water contamination during floods spreads diseases like cholera, typhoid, and
+                    dysentery. The agricultural sector suffers as floodwaters destroy crops, leading to food shortages
+                    and economic losses for farmers. Businesses and industries shut down, resulting in unemployment and
+                    financial crises. Education is disrupted when schools are damaged or used as shelters. Mental health
+                    issues, such as stress, anxiety, and depression, arise due to loss and uncertainty. Floods also have
+                    long-term effects on infrastructure, requiring costly repairs. Governments and aid organizations
+                    must provide relief, rebuild communities, and implement flood management strategies to minimize
+                    future impacts. Raising awareness and preparing for floods can help reduce human suffering.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">4. How can we protect ourselves from floods?</div>
+            <div class="collapse-content">
+                <p>Flood preparedness and mitigation strategies can significantly reduce damage and save lives. One
+                    effective method is building strong drainage systems and maintaining rivers to prevent overflow.
+                    Constructing dams and reservoirs helps control water flow. Afforestation, or planting trees, helps
+                    absorb excess rainwater, reducing runoff. In flood-prone areas, houses should be built on elevated
+                    platforms or stilts. Early warning systems, such as weather forecasts and sirens, allow people to
+                    evacuate in time. Governments must develop strict urban planning policies, ensuring that cities have
+                    proper drainage and flood barriers. People should prepare emergency kits with food, water, and
+                    medical supplies. During floods, avoiding contact with floodwater prevents infections. Community
+                    awareness programs educate people on safety measures, such as moving to higher ground and switching
+                    off electrical appliances. Disaster response teams should be well-equipped for rescue operations. By
+                    combining these efforts, we can significantly reduce the risks and impacts of floods.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">5. How does climate change affect flooding?</div>
+            <div class="collapse-content">
+                <p>Climate change significantly increases the frequency and severity of floods worldwide. Rising global
+                    temperatures cause more evaporation, leading to heavier rainfall and intense storms. Warmer air
+                    holds more moisture, resulting in prolonged and intense downpours that overwhelm drainage systems
+                    and riverbanks. Melting glaciers and polar ice caps contribute to rising sea levels, making coastal
+                    areas more vulnerable to flooding. Extreme weather events like hurricanes and cyclones become more
+                    powerful, bringing massive storm surges that flood cities. Deforestation, caused by human activities
+                    and climate shifts, reduces the land’s ability to absorb excess water, increasing surface runoff.
+                    Additionally, changing weather patterns disrupt traditional rainfall cycles, causing floods in areas
+                    that were previously dry. To mitigate these effects, governments must take action by reducing
+                    greenhouse gas emissions, implementing better urban planning, and restoring natural ecosystems like
+                    wetlands. Individuals can help by reducing their carbon footprint and supporting sustainable
+                    environmental policies.
+                </p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">6. What role do human activities play in causing floods?
+            </div>
+            <div class="collapse-content">
+                <p>Human activities significantly contribute to the increasing frequency and intensity of floods.
+                    Urbanization replaces natural land with concrete, reducing the soil’s ability to absorb rainwater,
+                    leading to waterlogging and flash floods. Deforestation removes trees that help absorb excess
+                    rainfall and prevent soil erosion, allowing floodwaters to spread rapidly. Poor waste management
+                    clogs drainage systems, causing water to overflow onto streets and homes. Unplanned construction
+                    near rivers and coastal areas disrupts natural water flow, making these regions more prone to
+                    flooding. Additionally, industrial activities and fossil fuel consumption contribute to climate
+                    change, increasing extreme weather events and rising sea levels. Dam failures, often caused by poor
+                    maintenance or excessive water accumulation, can lead to catastrophic flooding. To reduce
+                    human-induced flooding, cities must improve drainage infrastructure, enforce sustainable
+                    construction practices, and implement strict environmental regulations. Public awareness and
+                    responsible behavior can also help mitigate the impact of human activities on flooding.</p>
+            </div>
+        </div>
+    </main>
+
+
 
     <!-- fotter section -->
     <footer class="bg-[#F9F7F3] h-20 lg:h-28 mt-8 lg:mt-16"></footer>
