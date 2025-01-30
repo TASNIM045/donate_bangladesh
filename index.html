@@ -79,10 +79,12 @@
                         <button id="noakhali-flood-donation"
                             class="w-full bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl"
                             onclick="my_modal_2.showModal()">Donation</button>
-                        <dialog id="my_modal_2" class="modal">
+                        <dialog id="my_modal_2" class="modal text-center">
                             <div class="modal-box">
-                                <h3 class="text-lg font-bold">Hello!</h3>
-                                <p class="py-4">Press ESC key or click outside to close</p>
+                                <h3 class="text-3xl font-extrabold">Congrates!</h3>
+                                <img class="mx-auto mt-2" src="assets/coin.png" alt="">
+                                <p class="py-4 text-[#111111B3]">You Have Donated for Humankind</p>
+                                <h3 class="text-2xl font-extrabold">Successfully</h3>
                             </div>
                             <form method="dialog" class="modal-backdrop">
                                 <button>close</button>
@@ -98,7 +100,8 @@
                     <div class="p-2 lg:p-4 space-y-2 lg:space-y-4">
                         <div class="flex w-40 h-12 bg-[#F9F7F3] justify-center gap-2 items-center rounded-lg">
                             <img src="assets/coin.png" alt="">
-                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]">5500 BDT</p>
+                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]"><span
+                                    id="feni-total-donation">3200</span> BDT</p>
                         </div>
                         <h4 class="text-xl font-bold">
                             Donate for Flood Relief in Feni,Bangladesh
@@ -114,9 +117,11 @@
                             making a
                             real difference. Please consider donating today to assist those in urgent need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button
-                            class="w-full bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl">Donation</button>
+                        <input id="feni-donation-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="feni-flood-donation"
+                            class="w-full bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl"
+                            onclick="my_modal_2.showModal()">Donation</button>
                     </div>
                 </div>
                 <!-- quota movement -->
@@ -127,7 +132,7 @@
                     <div class="p-2 lg:p-4 space-y-2 lg:space-y-4">
                         <div class="flex w-40 h-12 bg-[#F9F7F3] justify-center gap-2 items-center rounded-lg">
                             <img src="assets/coin.png" alt="">
-                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]">5500 BDT</p>
+                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]"><span id="quota-total-donation">7560</span> BDT</p>
                         </div>
                         <h4 class="text-xl font-bold">
                             Aid for Injured in the Quota Movement
@@ -143,19 +148,22 @@
                             making a
                             donation to support these brave individuals in their time of need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button
-                            class="w-full bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl">Donation</button>
+                        <input id="quota-donation-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="quota-donation"
+                            class="w-full bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl"
+                            onclick="my_modal_2.showModal()">Donation</button>
                     </div>
                 </div>
             </div>
             <!-- history area -->
-            <div id="history-area" class="hidden">
-                <h1>This is History Area</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam repellendus velit veniam officiis
-                    libero asperiores sint? Iure repellendus ducimus amet sit sint magnam libero quia praesentium id.
-                    Illum, modi quos a maxime odit officiis repellendus blanditiis nihil ducimus, dolorum inventore
-                    consectetur, repudiandae totam cumque beatae sint commodi veniam optio. Commodi.</p>
+            <div id="history-area" class="hidden mt-4 lg:mt-8">
+                <div class="border border-gray-200 rounded-lg">
+                    <div class="p-4">
+                        <h1>96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                        <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
