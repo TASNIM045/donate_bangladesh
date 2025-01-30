@@ -34,7 +34,8 @@
             </div>
             <div class="navbar-end lg:mr-52 space-x-2 lg:space-x-3">
                 <img src="assets/coin.png" alt="">
-                <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]">5500 BDT</p>
+                <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]"><span
+                        id="my-balance">5500</span> BDT</p>
             </div>
         </nav>
     </header>
@@ -57,7 +58,8 @@
                     <div class="p-2 lg:p-4 space-y-2 lg:space-y-4">
                         <div class="flex w-40 h-12 bg-[#F9F7F3] justify-center gap-2 items-center rounded-lg">
                             <img src="assets/coin.png" alt="">
-                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]">5500 BDT</p>
+                            <p class="text-lg lg:text-xl font-normal lg:font-medium text-[#111111B3]"><span
+                                    id="noakhali-total-donation">3500</span> BDT</p>
                         </div>
                         <h4 class="text-xl font-bold">
                             Donate for Flood at Noakhali, Bangladesh
@@ -72,9 +74,20 @@
                             positive
                             impact on the lives of those in need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button
-                            class="w-full bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl">Donation</button>
+                        <input id="noakhali-donation-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="noakhali-flood-donation"
+                            class="w-full bg-[#B4F461] text-black border-0 text-lg lg:text-xl py-2 lg:py-3 px-6 lg:px-8 rounded-xl"
+                            onclick="my_modal_2.showModal()">Donation</button>
+                        <dialog id="my_modal_2" class="modal">
+                            <div class="modal-box">
+                                <h3 class="text-lg font-bold">Hello!</h3>
+                                <p class="py-4">Press ESC key or click outside to close</p>
+                            </div>
+                            <form method="dialog" class="modal-backdrop">
+                                <button>close</button>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
                 <!-- flood feni -->
@@ -139,6 +152,10 @@
             <!-- history area -->
             <div id="history-area" class="hidden">
                 <h1>This is History Area</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam repellendus velit veniam officiis
+                    libero asperiores sint? Iure repellendus ducimus amet sit sint magnam libero quia praesentium id.
+                    Illum, modi quos a maxime odit officiis repellendus blanditiis nihil ducimus, dolorum inventore
+                    consectetur, repudiandae totam cumque beatae sint commodi veniam optio. Commodi.</p>
             </div>
         </div>
     </main>
@@ -149,6 +166,7 @@
     <!-- js files -->
     <script src="js_files/blog.js"></script>
     <script src="js_files/history.js"></script>
+    <script src="js_files/donation.js"></script>
 </body>
 
 </html>
